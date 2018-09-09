@@ -1,7 +1,7 @@
 多语言
 ===
-[![Build Status](https://travis-ci.com/lsys/i18n.svg?branch=next_version)](https://travis-ci.com/lsys/i18n)
-[![Coverage Status](https://coveralls.io/repos/github/lsys/i18n/badge.svg?branch=next_version)](https://coveralls.io/github/lsys/i18n?branch=next_version)
+[![Build Status](https://travis-ci.com/lsys/i18n.svg?branch=master)](https://travis-ci.com/lsys/i18n)
+[![Coverage Status](https://coveralls.io/repos/github/lsys/i18n/badge.svg?branch=master)](https://coveralls.io/github/lsys/i18n?branch=master)
 
 使用代码
 ```
