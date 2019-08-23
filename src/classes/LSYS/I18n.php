@@ -76,10 +76,7 @@ class I18n
 		bindtextdomain($domain, $this->_dir);
 		$string=dgettext($domain,$string);
 		if(is_array($values)){
-			foreach ($values as $k=>$v){
-				$values[":".$k]=(string)$v;
-				unset($values[$k]);
-			}
+		    $values=array_map('strval',$values);
 			$string=strtr($string, $values);
 		}
 		return $string;

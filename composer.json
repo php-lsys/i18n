@@ -2,7 +2,7 @@
 	"name" : "lsys/i18n",
 	"type" : "library",
 	"license": "Apache-2.0",
-	"version" : "2.0.0",
+
 	"description" : "lsys module i18n",
 	"autoload" : {
 		"psr-4" : {
@@ -11,7 +11,7 @@
 	},
 	"require" : {
 		"php" : ">=5.4",
-		"lsys/core" : "~2.0.0",
+		"lsys/core" : "~2.1.0",
 		"ext-gettext":"*"
 	},
 	"require-dev" : {
