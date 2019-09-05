@@ -2,7 +2,6 @@
 	"name" : "lsys/i18n",
 	"type" : "library",
 	"license": "Apache-2.0",
-
 	"description" : "lsys module i18n",
 	"autoload" : {
 		"psr-4" : {
