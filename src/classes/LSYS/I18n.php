@@ -42,7 +42,7 @@ class I18n
 	 * @param string $lang
 	 * @return \LSYS\I18n
 	 */
-	public function setLang($lang){
+	public function setLang(string $lang){
 		$this->_lang=$lang;
 		return $this;
 	}
@@ -50,7 +50,7 @@ class I18n
 	 * set i18n domain
 	 * @param string $domain
 	 */
-	public function setDomain($domain){
+	public function setDomain(string $domain){
 		bind_textdomain_codeset($domain , 'UTF-8' );
 		$this->_domain=$domain;
 		return $this;
@@ -59,7 +59,7 @@ class I18n
 	 * get i18n domain
 	 * @return string
 	 */
-	public function getDomain(){
+	public function getDomain():?string{
 		return $this->_domain;
 	}
 	/**
@@ -69,7 +69,7 @@ class I18n
 	 * @param string $domain
 	 * @return string
 	 */
-	public function __($string,array $values=NULL,$domain=NULL){
+	public function __(?string $string,array $values=NULL,string $domain=NULL):?string{
 		setlocale(LC_ALL, $this->_lang.".UTF-8");
 		if ($domain===NULL)$domain=$this->_domain;
 		else bind_textdomain_codeset($domain , 'UTF-8' );
